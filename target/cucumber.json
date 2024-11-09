@@ -1,0 +1,103 @@
+[
+  {
+    "line": 5,
+    "elements": [
+      {
+        "start_timestamp": "2024-01-16T10:02:43.522Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4019300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bdd.hooks.GlobalHooks.beforeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Validation of get request with rest assured",
+        "description": "",
+        "id": "demo-for--api-automation;validation-of-get-request-with-rest-assured;;2",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.Error: Unresolved compilation problems: \n\tFileUtils cannot be resolved\n\tFileUtils cannot be resolved\n\tIOUtils cannot be resolved\n\r\n\tat com.bdd.hooks.GlobalHooks.afterScenario(GlobalHooks.java:87)\r\n",
+              "duration": 1999600,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.bdd.hooks.GlobalHooks.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4811423600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User perform GET operation for \"test\" with \"app_uri\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 32
+                },
+                {
+                  "val": "app_uri",
+                  "offset": 44
+                }
+              ],
+              "location": "com.bdd.steps.APICommonSteps.user_performs_get_operation(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2510700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The response code for the request should be \"403\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "403",
+                  "offset": 45
+                }
+              ],
+              "location": "com.bdd.steps.APICommonSteps.response_code_for_request(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User closes the connection",
+            "match": {
+              "location": "com.bdd.steps.APICommonSteps.user_closes_connection()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demoAPItest"
+          }
+        ]
+      }
+    ],
+    "name": "Demo for  api automation",
+    "description": "",
+    "id": "demo-for--api-automation",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/featurefiles/API/SampleAPIScenarios.feature",
+    "tags": []
+  }
+]
